@@ -6,30 +6,30 @@ import Link from "next/link";
 
 const Contact = () => {
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const formData = {}
-    Array.from(e.currentTarget.elements).forEach(field => {
-      if (!field.name) return
-      formData[field.name] = field.value
-    })
+  // async function handleSubmit(e) {
+  //   e.preventDefault();
+  //   const formData = {}
+  //   Array.from(e.currentTarget.elements).forEach(field => {
+  //     if (!field.name) return
+  //     formData[field.name] = field.value
+  //   })
     
-    const res = await fetch('/api/sendgrid', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
+  //   const res = await fetch('/api/sendgrid', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(formData)
+  //   })
 
-    if (res.ok) {
-      // clear form
-      alert('Success! Message sent.')
-    } else {
-      console.log(res)
-      alert('Error! Message not sent.')
-    }
-  };
+  //   if (res.ok) {
+  //     // clear form
+  //     alert('Success! Message sent.')
+  //   } else {
+  //     console.log(res)
+  //     alert('Error! Message not sent.')
+  //   }
+  // };
 
   return (
     <>
