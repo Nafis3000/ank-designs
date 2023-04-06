@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
-import Define from '@/components/Define'
+import Define from '@/components/saje/Define'
 
 function saje() {
   return (

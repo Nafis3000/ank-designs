@@ -47,7 +47,7 @@ const Work = () => {
             </Link>
           </div>
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
-            <Link href="/">
+            <Link href="/adplist">
               <motion.img
                 src="case2.svg"
                 className="w-full"
@@ -60,7 +60,7 @@ const Work = () => {
             </Link>
           </div>
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
-            <Link href="/">
+            <Link href="/designhub">
               <motion.img
                 src="case3.svg"
                 className="w-full"
