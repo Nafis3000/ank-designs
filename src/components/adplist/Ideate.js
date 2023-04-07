@@ -77,7 +77,7 @@ function Ideate() {
             </div>
           </div>
         </div>
-        <div className="w-10/12 sm:w-7/12 bg-[#1dc570] h-1 rounded-3xl my-6"></div>
+        <div className="w-10/12 sm:w-7/12 bg-[#1dc570] h-1 rounded-3xl my-12"></div>
       </div>
     </>
   );
