@@ -34,9 +34,27 @@ function Prototype() {
                 ADPList website.
               </p>
             </div>
-            <div className="w-6/12 flex flex-col justify-start">
+            <div className="w-6/12 hidden sm:flex flex-col justify-start">
               <Image
                 src="prototype1.svg"
+                width={1920}
+                height={1080}
+                alt="prototype1"
+                priority
+                className="w-full h-auto drop-shadow-xl"
+              ></Image>
+            </div>
+            <div className="w-6/12 flex flex-col justify-start sm:hidden">
+              <Image
+                src="prototype1top.svg"
+                width={1920}
+                height={1080}
+                alt="prototype1"
+                priority
+                className="w-full h-auto drop-shadow-xl"
+              ></Image>
+              <Image
+                src="prototype1bottom.svg"
                 width={1920}
                 height={1080}
                 alt="prototype1"
@@ -74,11 +92,11 @@ function Prototype() {
             </span>{" "}
             , that expressed the desire for a feature that could connect mentees
             with mentors who are hiring at their companies, we have made the
-            decision to implement a hiring feature. This new feature will allow users to easily
-            identify mentors who are currently employed by companies that are
-            actively seeking new hires. By introducing this feature, we aim to
-            bridge the gap between mentees and job opportunities advertised by
-            mentors.
+            decision to implement a hiring feature. This new feature will allow
+            users to easily identify mentors who are currently employed by
+            companies that are actively seeking new hires. By introducing this
+            feature, we aim to bridge the gap between mentees and job
+            opportunities advertised by mentors.
           </p>
           <p className="leading-loose text-sm tracking-wide mt-8">
             This innovative feature will help users navigate the mentorship
