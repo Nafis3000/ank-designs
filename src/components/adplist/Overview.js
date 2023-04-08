@@ -32,6 +32,7 @@ function Overview() {
                   alt="figma icon"
                   width={25}
                   height={25}
+                  className="w-auto h-auto"
                 ></Image>
                 <p className="ml-1 leading-loose text-sm tracking-wide">
                   Figma
@@ -42,8 +43,9 @@ function Overview() {
                   src="miro.svg"
                   priority
                   alt="Miro icon"
-                  width={26}
-                  height={26}
+                  width={25}
+                  height={25}
+                  className="w-auto h-auto"
                 ></Image>
                 <p className="ml-1 leading-loose text-sm tracking-wide">Miro</p>
               </div>
@@ -54,6 +56,7 @@ function Overview() {
                   alt="Adobe Illustrator icon"
                   width={25}
                   height={25}
+                  className="w-auto h-auto"
                 ></Image>
                 <p className="ml-1 leading-loose text-sm tracking-wide">
                   Adobe Illustrator
@@ -85,7 +88,7 @@ function Overview() {
             community.
           </p>
         </div>
-        <div className="w-10/12 sm:w-7/12 my-3">
+        <div className="w-10/12 sm:w-7/12 ">
           <h1 className="text-3xl my-6 sm:mt-8">Solution</h1>
           <p className="leading-loose text-sm tracking-wide">
             Designing a mobile app that offers a seamless user experience,
@@ -96,7 +99,7 @@ function Overview() {
             accessible and convenient mentorship platform in the industry.
           </p>
         </div>
-        <div className='w-10/12 sm:w-7/12 bg-[#1dc570] h-1 rounded-3xl my-6'></div>
+        <div className="w-10/12 sm:w-7/12 bg-[#1dc570] h-1 rounded-3xl my-12"></div>
       </div>
     </>
   );

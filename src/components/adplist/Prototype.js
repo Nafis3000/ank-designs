@@ -6,15 +6,15 @@ function Prototype() {
     <>
       <div className="flex flex-col bg-white w-full items-center">
         <div className="w-10/12 sm:w-7/12">
-          <h1 className="text-3xl font-extrabold">
-            <span className="">Prototype</span>
+          <h1 className="text-3xl font-bold">
+            Prototype
           </h1>
         </div>
         <div className="w-10/12 sm:w-7/12 mt-12">
           <div className="flex flex-col sm:flex-row w-full">
             <div className="sm:w-6/12 flex flex-col justify-center">
               <p className="text-[#1dc570] text-xs sm:text-sm">Mid-Fidelity</p>
-              <h1 className="mb-3 sm:text-2xl font-bold">Wireframe</h1>
+              <h1 className="mb-3 sm:text-2xl">Wireframe</h1>
               <p className="leading-loose text-sm tracking-wide">
                 Our mid-fidelity wireframe includes the{" "}
                 <span className="font-bold">
@@ -50,7 +50,7 @@ function Prototype() {
           <div className="flex w-full">
             <div className="w-3/12 flex flex-col justify-start">
               <p className="text-[#1dc570] text-xs sm:text-sm">Mid-Fidelity</p>
-              <h1 className="mb-3 sm:text-2xl font-bold">
+              <h1 className="mb-3 sm:text-2xl">
                 Added hiring feature
               </h1>
             </div>
