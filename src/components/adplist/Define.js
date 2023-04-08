@@ -6,7 +6,9 @@ function Define() {
     <>
       <div className="flex flex-col bg-white w-full items-center ">
         <div className="w-10/12 sm:w-7/12">
-          <h1 className="text-3xl my-6 sm:mt-8 font-extrabold">Define</h1>
+          <h1 className="text-3xl my-6 sm:mt-8 font-extrabold">
+            <span className="">Define</span>
+          </h1>
           <p className="leading-loose text-sm tracking-wide">
             Keeping the problem statement in focus, we initiated the process of
             conducting interviews with both mentors and mentees who regularly

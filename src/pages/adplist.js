@@ -1,25 +1,20 @@
-import React from 'react'
+import React from "react";
 import Navbar from "@/components/Navbar";
-import Define from '@/components/adplist/Define';
-import Overview from '@/components/adplist/Overview';
-import Delivery from '@/components/adplist/Delivery';
-import Ideate from '@/components/adplist/Ideate';
-import Prototype from '@/components/adplist/Prototype';
-import Usability from '@/components/adplist/Usability';
+import Define from "@/components/adplist/Define";
+import Overview from "@/components/adplist/Overview";
+import Delivery from "@/components/adplist/Delivery";
+import Ideate from "@/components/adplist/Ideate";
+import Prototype from "@/components/adplist/Prototype";
+import Usability from "@/components/adplist/Usability";
 import Image from "next/image";
-import { Sen } from "@next/font/google"
+import localFont from "@next/font/local";
 
-const sen = Sen({
-  subsets: ["latin"],
-  weight: '400',
-});
-  
 
 function adplist() {
   return (
     <>
       <Navbar />
-      <div className={sen.className}>
+      <div className={``}>
         <div className="flex flex-col h-screen w-screen">
           <Image
             src="adp-header.svg"
@@ -41,4 +36,4 @@ function adplist() {
   );
 }
 
-export default adplist
+export default adplist;

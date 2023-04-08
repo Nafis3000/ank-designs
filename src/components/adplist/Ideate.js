@@ -6,7 +6,10 @@ function Ideate() {
     <>
       <div className="flex flex-col bg-white w-full items-center ">
         <div className="w-10/12 sm:w-7/12">
-          <h1 className="text-3xl my-6 sm:mt-8 font-extrabold">Ideate</h1>
+          <h1 className="text-3xl my-6 sm:mt-8 font-extrabold">
+            {" "}
+            <span className="font-bold">Ideate</span>
+          </h1>
         </div>
         <div className="w-10/12 sm:w-7/12">
           <p className="leading-loose text-sm tracking-wide mt-8">
@@ -45,7 +48,9 @@ function Ideate() {
           <div className="flex w-full">
             <div className="w-3/12 flex flex-col justify-start">
               <h1 className="mb-3 sm:text-2xl font-extrabold">User Flow</h1>
-              <p className="text-[#1dc570] text-xs sm:text-sm">Of Hiring Feature</p>
+              <p className="text-[#1dc570] text-xs sm:text-sm">
+                Of Hiring Feature
+              </p>
             </div>
             <div className="w-9/12 flex flex-col justify-start">
               <Image
@@ -62,8 +67,10 @@ function Ideate() {
         <div className="w-10/12 sm:w-7/12 mt-12">
           <div className="flex w-full">
             <div className="w-3/12 flex flex-col justify-start">
-              <h1 className="mb-3 sm:text-2xl font-extrabold">User Flow</h1>
-              <p className="text-[#1dc570] text-xs sm:text-sm">Of Workspace Feature</p>
+              <h1 className="mb-3 sm:text-2xl font-bold">User Flow</h1>
+              <p className="text-[#1dc570] text-xs sm:text-sm">
+                Of Workspace Feature
+              </p>
             </div>
             <div className="w-9/12 flex flex-col justify-start">
               <Image

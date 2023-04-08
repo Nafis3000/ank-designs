@@ -16,7 +16,7 @@ const Work = () => {
           <div className="flex flex-col w-5/6 sm:w-3/6 justify-between my-6 sm:my-0">
             <h1 className="font-bold text-4xl py-4 mt-4 sm:mt-0">Hello!</h1>
             <p className="py-2 text-2xl sm:w-11/12">
-              I am <span className="font-black">Ankur Dixit</span> and I am a UX
+              I am Ankur Dixit and I am a UX
               Designer and a Junior Developer based in Vancouver, BC.
             </p>
             <p className="py-2 text-2xl">
