@@ -11,8 +11,8 @@ function Prototype() {
           </h1>
         </div>
         <div className="w-10/12 sm:w-7/12 mt-12">
-          <div className="flex w-full">
-            <div className="w-6/12 flex flex-col justify-center">
+          <div className="flex flex-col sm:flex-row w-full">
+            <div className="sm:w-6/12 flex flex-col justify-center">
               <p className="text-[#1dc570] text-xs sm:text-sm">Mid-Fidelity</p>
               <h1 className="mb-3 sm:text-2xl font-bold">Wireframe</h1>
               <p className="leading-loose text-sm tracking-wide">
@@ -25,7 +25,7 @@ function Prototype() {
                 added by our team to improve mentees chances of getting hired at
                 a position currently being offered.
               </p>
-              <p className="leading-loose text-sm tracking-wide mt-8">
+              <p className="leading-loose text-sm tracking-wide mt-4 sm:mt-8">
                 Our aim with these wireframes is to make them{" "}
                 <span className="font-bold">
                   simple, direct and user friendly
@@ -34,27 +34,9 @@ function Prototype() {
                 ADPList website.
               </p>
             </div>
-            <div className="w-6/12 hidden sm:flex flex-col justify-start">
+            <div className="sm:w-6/12 mt-4 sm:mt-0 flex flex-col justify-start">
               <Image
                 src="prototype1.svg"
-                width={1920}
-                height={1080}
-                alt="prototype1"
-                priority
-                className="w-full h-auto drop-shadow-xl"
-              ></Image>
-            </div>
-            <div className="w-6/12 flex flex-col justify-start sm:hidden">
-              <Image
-                src="prototype1top.svg"
-                width={1920}
-                height={1080}
-                alt="prototype1"
-                priority
-                className="w-full h-auto drop-shadow-xl"
-              ></Image>
-              <Image
-                src="prototype1bottom.svg"
                 width={1920}
                 height={1080}
                 alt="prototype1"
