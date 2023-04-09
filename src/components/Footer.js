@@ -18,7 +18,7 @@ const Footer = () => {
         Feel free to reach out to me on any of the platforms below!
       </p>
       <div className="flex flex-row justify-center items-center my-6 text-5xl">
-        <div className="flex w-4/12 justify-around">
+        <div className="flex w-3/12 justify-around">
           <Link
             href="https://www.linkedin.com/in/ankdesigns/"
             target="_blank"
@@ -32,11 +32,7 @@ const Footer = () => {
               <AiOutlineLinkedin />
             </motion.div>
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/ankdesigns/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link href="mailto: ankdixit097@gmail.com" target="_blank" rel="noreferrer">
             <motion.div
               className="hover:opacity-60"
               whileHover={{ scale: 1.09 }}
