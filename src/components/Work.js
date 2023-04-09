@@ -12,8 +12,8 @@ const Work = () => {
         id="work"
         className="w-full md:h-full flex flex-col items-center justify-between bg-gradient-to-b from-indigo-300 via-slate-50 to-slate-50"
       >
-        <div className="w-full flex flex-col sm:flex-row items-center justify-center py-4">
-          <div className="flex flex-col w-5/6 sm:w-3/6 justify-between my-6 sm:my-0">
+        <div className="w-5/6 flex flex-col sm:flex-row items-center justify-center py-4">
+          <div className="flex flex-col full justify-between my-6 sm:my-0">
             <h1 className="font-bold text-4xl py-4 mt-4 sm:mt-0">Hello!</h1>
             <p className="py-2 text-2xl sm:w-11/12">
               I am Ankur Dixit and I am a UX
@@ -23,14 +23,16 @@ const Work = () => {
               I create incredible digital experiences for people.
             </p>
           </div>
-          <Image
-            src="face.svg"
-            width={200}
-            height={200}
-            className="sm:pt-10 sm:w-2/6 h-auto"
-            alt="face"
-            priority
-          ></Image>
+          <div className='sm:pt-10 sm:w-3/6'>
+            <Image
+              src="face.svg"
+              width={200}
+              height={200}
+              className="w-full h-auto"
+              alt="face"
+              priority
+            ></Image>
+          </div>
         </div>
         <div className="flex flex-col justify-around items-center">
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
