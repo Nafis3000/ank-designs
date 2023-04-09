@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Delivery() {
   return (
@@ -64,12 +65,42 @@ function Delivery() {
           </div>
         </div>
       </div>
-      <div className="w-10/12 sm:w-7/12 my-12">
+
+      <Link
+        href="https://www.figma.com/proto/B22uppsKZ4s4hFNdRiYqPx/Wireframe?node-id=143%3A1522"
+        target="_blank"
+      >
+        <button
+          type="button"
+          className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-[#377d7e] border-2 border-[#377d7e] mt-12 hover:text-white group hover:bg-gray-50"
+        >
+          <span className="absolute left-0 block w-full h-0 transition-all bg-[#377d7e] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+          <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+          <span className="relative">See Prototype</span>
+        </button>
+      </Link>
+
+      <div className="w-10/12 sm:w-7/12 my-24">
         <div className="flex flex-col sm:flex-row w-full">
           <div className="sm:w-6/12 flex flex-col justify-center sm:ml-3 p-3 sm:p-0">
             <div className="w-11/12 self-center mt-12 sm:my-0">
-              <p className="text-[#1dc570] text-xs sm:text-sm">Outline of</p>
-              <h1 className="mb-3 sm:text-2xl">Usability Test Plan</h1>
+              <p className="text-[#1dc570] text-xs sm:text-sm">Reflections</p>
+              <h1 className="mb-3 sm:text-2xl">Lessons Learned</h1>
             </div>
             <ul className="list-disc leading-loose text-xs tracking-wide w-9/12 self-center">
               <li className="mb-1">
