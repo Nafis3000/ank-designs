@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../Footer";
 
 function Delivery() {
   return (
@@ -135,6 +136,7 @@ function Delivery() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

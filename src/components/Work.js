@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./Footer";
 
 const Work = () => {
   
@@ -34,7 +35,7 @@ const Work = () => {
             ></Image>
           </div>
         </div>
-        <div className="flex flex-col justify-around items-center">
+        <div className="flex flex-col justify-around items-center mb-6">
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
             <Link href="/saje">
               <motion.img
@@ -75,6 +76,7 @@ const Work = () => {
             </Link>
           </div>
         </div>
+        <Footer />
       </motion.div>
     </>
   );
