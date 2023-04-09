@@ -14,11 +14,11 @@ const Footer = () => {
       <h1 className="font-bold text-2xl self-center">
         Let's Connect <span className="text-3xl">🤝</span>
       </h1>
-      <p className="mt-3 self-center">
+      <p className="mt-3 w-full text-center sm:self-center">
         Feel free to reach out to me on any of the platforms below!
       </p>
       <div className="flex flex-row justify-center items-center my-6 text-5xl">
-        <div className="flex w-3/12 justify-around">
+        <div className="flex w-6/12 sm:w-3/12 justify-around">
           <Link
             href="https://www.linkedin.com/in/ankdesigns/"
             target="_blank"

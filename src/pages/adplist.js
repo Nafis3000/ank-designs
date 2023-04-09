@@ -7,7 +7,6 @@ import Ideate from "@/components/adplist/Ideate";
 import Prototype from "@/components/adplist/Prototype";
 import Usability from "@/components/adplist/Usability";
 import Image from "next/image";
-import localFont from "@next/font/local";
 
 
 function adplist() {
@@ -20,7 +19,7 @@ function adplist() {
             src="adp-header.svg"
             width={1920}
             height={1080}
-            alt="sage-header"
+            alt="adplist-header"
             priority
             className="w-full h-auto mt-12"
           ></Image>
