@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="mt-6 flex flex-col w-full">
       <div className="bg-slate-500 w-5/6 self-center h-0.5 mb-6"></div>
-      <h1 className="font-bold text-2xl self-center">
+      <h1 className="font-semibold text-2xl self-center">
         Let's Connect <span className="text-3xl">🤝</span>
       </h1>
       <p className="mt-3 w-full text-center sm:self-center">

@@ -69,7 +69,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/#resume" scroll={false}>
+              <Link href="/AnkurDixit-Resume.pdf" target="_blank" description="Ankur Dixit Resume">
                 <li className="px-5 text-sm uppercase ">Resume</li>
               </Link>
             </motion.div>

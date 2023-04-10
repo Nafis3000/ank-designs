@@ -15,7 +15,7 @@ const Work = () => {
       >
         <div className="w-5/6 flex flex-col sm:flex-row items-center justify-center py-4">
           <div className="flex flex-col full justify-between my-6 sm:my-0">
-            <h1 className="font-bold text-4xl py-4 mt-4 sm:mt-0">Hello!</h1>
+            <h1 className="font-semibold text-4xl py-4 mt-4 sm:mt-0">Hello!</h1>
             <p className="py-2 text-2xl sm:w-11/12">
               I am Ankur Dixit and I am a UX
               Designer and a Junior Developer based in Vancouver, BC.

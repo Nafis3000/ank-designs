@@ -42,7 +42,7 @@ const Contact = () => {
       <Navbar />
       <div className="flex flex-col h-full w-full bg-gradient-to-b from-indigo-300 to-slate-50">
         <div className="flex h-screen flex-col justify-center items-center">
-          <h1 className="text-4xl font-black py-3 mb-1">Get In Touch!</h1>
+          <h1 className="text-4xl font-semibold py-3 mb-1">Get In Touch!</h1>
           <form
             onSubmit={handleSubmit}
             className="flex flex-col w-3/4 h-3/5 sm:w-1/2 rounded-2xl justify-around items-center"
