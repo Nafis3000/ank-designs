@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaInstagram, FaFreeCodeCamp } from "react-icons/fa";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -174,3 +174,155 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// const Navbar = () => {
+//   const [show, setShow] = useState(false);
+//   const handleNav = () => {
+//     setShow(!show);
+//   };
+
+//   return (
+//     <motion.div className="fixed w-full shadow-2xl z-[100] bg-[#0d1821] h-12">
+//       <motion.div className="flex justify-between items-center w-full h-full">
+//         <Link href="/">
+//           <Image
+//             src="Logo.svg"
+//             alt="/"
+//             width="200"
+//             height="100"
+//             className="mx-2"
+//           />
+//         </Link>
+//         <div>
+//           <ul className="hidden md:flex text-white">
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+//             >
+//               <Link href="/" scroll={false}>
+//                 <li className="px-5 text-sm uppercase">Work</li>
+//               </Link>
+//             </motion.div>
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
+//             >
+//               <Link href="/about" scroll={false}>
+//                 <li className="px-5 text-sm uppercase">About</li>
+//               </Link>
+//             </motion.div>
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+//             >
+//               <Link href="/contact" scroll={false}>
+//                 <li className="px-5 text-sm uppercase ">Contact</li>
+//               </Link>
+//             </motion.div>
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+//             >
+//               <Link href="/blog" scroll={false}>
+//                 <li className="px-5 text-sm uppercase ">Blog</li>
+//               </Link>
+//             </motion.div>
+//           </ul>
+//           <div className="md:hidden">
+//             <button onClick={handleNav}>
+//               <svg
+//                 xmlns="http://www.w3.org/2000/svg"
+//                 className="h-6 w-6 text-white"
+//                 fill="none"
+//                 viewBox="0 0 24 24"
+//                 stroke="currentColor"
+//               >
+//                 <path
+//                   strokeLinecap="round"
+//                   strokeLinejoin="round"
+//                   strokeWidth={2}
+//                   d="M4 6h16M4 12h16M4 18h16"
+//                 />
+//               </svg>
+//             </button>
+//           </div>
+//         </div>
+//       </motion.div>
+//       {show && (
+//         <motion.div
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           transition={{ duration: 0.5 }}
+//           className="fixed w-full h-full bg-[#0d1821] z-[100] top-0 left-0"
+//         >
+//           <div className="flex flex-col justify-center items-center h-full">
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+//             >
+//               <Link href="/" scroll={false}>
+//                 <li className="px-5 text-sm uppercase">Work</li>
+//               </Link>
+//             </motion.div>
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
+//             >
+//               <Link href="/about" scroll={false}>
+//                 <li className="px-5 text-sm uppercase">About</li>
+//               </Link>
+//             </motion.div>
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+//             >
+//               <Link href="/contact" scroll={false}>
+//                 <li className="px-5 text-sm uppercase ">Contact</li>
+//               </Link>
+//             </motion.div>
+//             <motion.div
+//               whileHover={{
+//                 scale: 1.1,
+//                 transition: { duration: 0.5, ease: "easeInOut" },
+//               }}
+//               whileTap={{ scale: 0.9 }}
+//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+//             >
+//               <Link href="/blog" scroll={false}>
+//                 <li className="px-5 text-sm uppercase ">Blog</li>
+//               </Link>
+//             </motion.div>
+//           </div>
+//         </motion.div>
+//       )}
+//     </motion.div>
+//   );
+// };

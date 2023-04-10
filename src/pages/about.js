@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
@@ -11,14 +12,15 @@ const About = () => {
       <Navbar />
       <div className="flex flex-col justify-center items-center h-full w-full bg-gradient-to-b from-indigo-300 to-slate-50">
         <div className="w-5/6 sm:w-3/6 flex justify-center items-center mt-24">
-          <Image
+          <motion.img
             src="about.svg"
             width={400}
             height={400}
-            priority
             alt="about-image"
             className="w-1/2 h-auto"
-          ></Image>
+            drag
+            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+          ></motion.img>
         </div>
         <div className="flex flex-col w-5/6 sm:w-3/6">
           <div className="text-black flex flex-col mt-6 sm:mt-8 mb-8">

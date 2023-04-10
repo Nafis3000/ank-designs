@@ -7,13 +7,15 @@ import Ideate from "@/components/adplist/Ideate";
 import Prototype from "@/components/adplist/Prototype";
 import Usability from "@/components/adplist/Usability";
 import Image from "next/image";
-
+import BackToTop from "@/components/BackToTop";
+import ScrollProgress from "@/components/ScrollProgress";
 
 function adplist() {
   return (
     <>
       <Navbar />
-      <div className={``}>
+      <ScrollProgress color={"bg-[#377d7e]"} />
+      <div>
         <div className="flex flex-col h-screen w-screen">
           <Image
             src="adp-header.svg"
@@ -31,6 +33,7 @@ function adplist() {
           <Delivery />
         </div>
       </div>
+      <BackToTop />
     </>
   );
 }

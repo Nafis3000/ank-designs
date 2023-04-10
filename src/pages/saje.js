@@ -6,11 +6,14 @@ import Overview from "@/components/saje/Overview";
 import Delivery from "@/components/saje/Delivery";
 import Ideate from "@/components/saje/Ideate";
 import Prototype from "@/components/saje/Prototype";
+import BackToTop from "@/components/BackToTop";
+import ScrollProgress from '@/components/ScrollProgress';
 
 function saje() {
   return (
     <>
       <Navbar />
+      <ScrollProgress color={"bg-green-700"} />
       <div className={``}>
         <div className="flex flex-col h-screen w-screen">
           <Image
@@ -28,6 +31,7 @@ function saje() {
           <Delivery />
         </div>
       </div>
+      <BackToTop />
     </>
   );
 }

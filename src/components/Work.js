@@ -25,14 +25,15 @@ const Work = () => {
             </p>
           </div>
           <div className='sm:pt-10 sm:w-3/6'>
-            <Image
+            <motion.img
               src="face.svg"
               width={200}
               height={200}
               className="w-full h-auto"
               alt="face"
-              priority
-            ></Image>
+              drag
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            ></motion.img>
           </div>
         </div>
         <div className="flex flex-col justify-around items-center mb-6">
