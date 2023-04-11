@@ -1,17 +1,34 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
 
 const About = () => {
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+
   return (
     <>
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-full w-full bg-gradient-to-b from-indigo-300 to-slate-50 ">
-        <div className="w-5/6 sm:w-3/6 flex justify-center items-center mt-24">
+      <div className="h-full">
+      <motion.div style={{ y }} className="absolute -z-20 inset-x-0 top-0">
+        <Image
+          src="/about.background.jpg"
+          width={1920}
+          height={1080}
+          alt="about-image"
+          priority
+          className="w-full h-auto"
+        ></Image>
+      </motion.div>
+      <div className="flex flex-col justify-center items-center absolute h-[1000px] w-full bg-gradient-to-b from-indigo-300 to-slate-50 opacity-60">
+      </div>
+      <div className="flex flex-col justify-center items-center w-full absolute">
+        <div className="flex flex-col justify-center items-center">
+          <div className="w-5/6 sm:w-3/6 flex justify-center items-center mt-24">
           <motion.img
             src="about.svg"
             width={400}
@@ -24,7 +41,7 @@ const About = () => {
         </div>
         <div className="flex flex-col w-5/6 sm:w-3/6">
           <div className="text-black flex flex-col mt-6 sm:mt-8 mb-8">
-            <h1 className="text-2xl py-3">Hi there, my name is Ankur</h1>
+            <h1 className="text-lg sm:text-2xl py-3">Hi there, my name is Ankur</h1>
             <p className="my-2">
               I am a tech enthusiast focused on design and creating incredible
               experiences for people from all backgrounds. My goal is to combine
@@ -60,7 +77,9 @@ const About = () => {
             </p>
           </div>
         </div>
+        </div>
         <Footer />
+      </div>
       </div>
     </>
   );

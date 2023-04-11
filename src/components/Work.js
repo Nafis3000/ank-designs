@@ -46,7 +46,6 @@ const Work = () => {
                 height={300}
                 alt="case2"
                 whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
               ></motion.img>
             </Link>
           </div>
@@ -59,7 +58,6 @@ const Work = () => {
                 height={300}
                 alt="case2"
                 whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
               ></motion.img>
             </Link>
           </div>
@@ -72,7 +70,6 @@ const Work = () => {
                 height={300}
                 alt="case3"
                 whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
               ></motion.img>
             </Link>
           </div>

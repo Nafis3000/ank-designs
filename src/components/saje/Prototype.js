@@ -23,7 +23,7 @@ const Prototype = () => {
           width={1920}
           height={1080}
           alt="use3"
-          className="w-10/12 sm:w-7/12 h-auto self-center"
+          className="w-5/12 h-auto self-center"
         >
           <source src="/saje-hifi.mov" />
         </video>
