@@ -39,7 +39,7 @@ const About = () => {
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
           ></motion.img>
         </div>
-        <div className="flex flex-col w-5/6 sm:w-3/6">
+        <div className="flex flex-col w-5/6 sm:w-3/6 mb-12">
           <div className="text-black flex flex-col mt-6 sm:mt-8 mb-8">
             <h1 className="text-lg sm:text-2xl py-3">Hi there, my name is Ankur</h1>
             <p className="my-2">

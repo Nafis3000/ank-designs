@@ -44,7 +44,7 @@ const Overview = () => {
                   Figma
                 </p>
               </div>
-              <div className="flex">
+              <div className="flex my-3">
                 <Image
                   src="miro.svg"
                   priority
@@ -77,7 +77,7 @@ const Overview = () => {
           <div className="w-1/3 flex flex-col items-end">
             <h1 className="text-xl sm:text-3xl my-6 sm:mt-8">My Role</h1>
             <p className="leading-loose text-sm tracking-wide">UX/UI Design</p>
-            <p className="leading-loose text-sm tracking-wide">Research</p>
+            <p className="leading-loose text-sm tracking-wide my-3">Research</p>
             <p className="leading-loose text-sm tracking-wide text-right">
               Prototype & Testing
             </p>

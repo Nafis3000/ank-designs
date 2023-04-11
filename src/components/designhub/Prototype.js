@@ -24,7 +24,7 @@ const Prototype = () => {
           height={1080}
           alt="Test 1"
           priority
-          className="w-full h-auto my-6"
+          className="w-full h-auto my-6 sm:my-12"
         ></Image>
         <Image
           src="/dh-test2.svg"
@@ -181,7 +181,7 @@ const Prototype = () => {
           height={1080}
           alt="Final 10"
           priority
-          className="w-full h-auto mt-14 mb-9"
+          className="w-full h-auto my-14 mb-24"
         ></Image>
       </div>
       <Footer />

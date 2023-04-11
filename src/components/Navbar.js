@@ -1,9 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
-import { FaLinkedin, FaInstagram, FaFreeCodeCamp } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { AiOutlineClose, AiOutlineMenu, AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram } from "react-icons/ai";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -11,17 +10,26 @@ const Navbar = () => {
     setShow(!show);
   };
 
+  const item = {
+    exit: {
+      opacity: 0,
+      height: 0,
+      transition: { duration: 0.5, ease: "easeInOut", delay: 0.9 },
+    }
+  };
+
+
   return (
     <motion.div className="fixed w-full shadow-2xl z-[100] bg-[#0d1821] h-12">
       <motion.div className="flex justify-between items-center w-full h-full">
         <Link href="/">
-        <Image
-          src="Logo.svg"
-          alt="/"
-          width="200"
-          height="100"
-          className="mx-2"
-        />
+          <Image
+            src="Logo.svg"
+            alt="/"
+            width="200"
+            height="100"
+            className="mx-2"
+          />
         </Link>
         <div>
           <ul className="hidden md:flex text-white">
@@ -69,260 +77,149 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
             >
-              <Link href="/AnkurDixit-Resume.pdf" target="_blank" description="Ankur Dixit Resume">
+              <Link
+                href="/AnkurDixit-Resume.pdf"
+                target="_blank"
+                description="Ankur Dixit Resume"
+              >
                 <li className="px-5 text-sm uppercase ">Resume</li>
               </Link>
             </motion.div>
           </ul>
         </div>
         <div onClick={handleNav} className="md:hidden cursor-pointer">
-          <AiOutlineMenu size={25} className="text-2xl text-white" />
+          <AiOutlineMenu size={25} className="text-2xl text-white mx-2" />
         </div>
       </motion.div>
-
-      <div
-        className={
-          show ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70" : ""
-        }
-      >
-        <div
-          className={
-            show
-              ? "fixed left-0 top-0 w-[65%] sm:w-[60%] md:w-[45%] h-full bg-slate-100 p-1 ease-in duration-500"
-              : "fixed left-[-100%] top-0  p-1 ease-in duration-500"
-          }
-        >
-          <div>
-            <div className="flex w-full items-center justify-between">
-              <Image
-                src="Logo.svg"
-                alt="/"
-                width="150"
-                height="50"
-                className="rounded"
-              />
+      <AnimatePresence>
+        {show && (
+          <motion.div
+            variants={item}
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "100vh" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            exit="exit"
+            className="fixed top-0 left-0 w-full h-full bg-[#0d1821] z-[100]"
+          >
+            <div className="flex flex-col justify-center items-center h-full">
               <div
                 onClick={handleNav}
-                className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="cursor-pointer absolute top-3 right-1"
               >
-                <AiOutlineClose size={15} />
+                <AiOutlineClose
+                  size={25}
+                  className="text-2xl text-white mx-2"
+                />
+              </div>
+              <div className="flex flex-col justify-around items-center h-4/6">
+                <Image src="Logo.svg" alt="/" width="200" height="100" />
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.5, ease: "easeInOut" },
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                  className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+                >
+                  <Link href="/" className="px-5 text-sm uppercase text-white">
+                    Work
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.5, ease: "easeInOut" },
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                  className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+                >
+                  <Link
+                    href="/about"
+                    className="px-5 text-sm uppercase text-white"
+                  >
+                    About
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.5, ease: "easeInOut" },
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                  className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+                >
+                  <Link
+                    href="/contact"
+                    className="px-5 text-sm uppercase text-white"
+                  >
+                    Contact
+                  </Link>
+                </motion.div>
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.5, ease: "easeInOut" },
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                  className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
+                >
+                  <Link
+                    href="AnkurDixit-Resume.pdf"
+                    className="px-5 text-sm uppercase text-white"
+                  >
+                    Resume
+                  </Link>
+                </motion.div>
+              </div>
+              <div className="flex flex-row w-full justify-center items-center my-3 sm:my-6 text-4xl">
+                <div className="flex text-white w-6/12 justify-around">
+                  <Link
+                    href="https://www.linkedin.com/in/ankdesigns/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <motion.div
+                      className="hover:opacity-60"
+                      whileHover={{ scale: 1.09 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      <AiOutlineLinkedin />
+                    </motion.div>
+                  </Link>
+                  <Link
+                    href="mailto: ankdixit097@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <motion.div
+                      className="hover:opacity-60"
+                      whileHover={{ scale: 1.09 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      <AiOutlineMail />
+                    </motion.div>
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/ankdesigns0/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <motion.div
+                      className="hover:opacity-60"
+                      whileHover={{ scale: 1.09 }}
+                      whileTap={{ scale: 0.97 }}
+                    >
+                      <AiOutlineInstagram />
+                    </motion.div>
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="border-b border-slate-400 my-4 text-center">
-              <p>Let's build something together.</p>
-            </div>
-          </div>
-          <div className="py-4 flex flex-col">
-            <ul className="uppercase ml-3">
-              <Link href="/#work" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">Work</li>
-              </Link>
-              <Link href="/#about" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">
-                  About
-                </li>
-              </Link>
-              <Link href="/#contact" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">
-                  Contact
-                </li>
-              </Link>
-              <Link href="/#resume" onClick={handleNav} scroll={false}>
-                <li className="py-4 text-sm border-b border-gray-300">
-                  Resume
-                </li>
-              </Link>
-            </ul>
-            <div className="mt-8">
-              <p className="uppercase tracking-widest text-sky-600 ml-2">
-                Let's Connect
-              </p>
-              <div className="flex items-center justify-around my-6 w-full sm:w[80%] text-3xl">
-                <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
-                  <Link
-                    href="https://www.linkedin.com/in/ankur-d-4820a1244/"
-                    target="_blank"
-                  >
-                    <FaLinkedin />
-                  </Link>
-                </div>
-                <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
-                  <Link href="https://github.com/Nafis3000" target="_blank">
-                    <FaInstagram />
-                  </Link>
-                </div>
-                <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
-                  <Link href="mailto:ankdixit097@gmail.com" target="_blank">
-                    <AiOutlineMail />
-                  </Link>
-                </div>
-                <div className="rounded shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duratation-300">
-                  <Link
-                    href="https://www.freecodecamp.org/fcc12f59cba-6269-44ac-9407-65b90082c113"
-                    target="_blank"
-                  >
-                    <FaFreeCodeCamp />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
 
 export default Navbar;
-
-// const Navbar = () => {
-//   const [show, setShow] = useState(false);
-//   const handleNav = () => {
-//     setShow(!show);
-//   };
-
-//   return (
-//     <motion.div className="fixed w-full shadow-2xl z-[100] bg-[#0d1821] h-12">
-//       <motion.div className="flex justify-between items-center w-full h-full">
-//         <Link href="/">
-//           <Image
-//             src="Logo.svg"
-//             alt="/"
-//             width="200"
-//             height="100"
-//             className="mx-2"
-//           />
-//         </Link>
-//         <div>
-//           <ul className="hidden md:flex text-white">
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-//             >
-//               <Link href="/" scroll={false}>
-//                 <li className="px-5 text-sm uppercase">Work</li>
-//               </Link>
-//             </motion.div>
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
-//             >
-//               <Link href="/about" scroll={false}>
-//                 <li className="px-5 text-sm uppercase">About</li>
-//               </Link>
-//             </motion.div>
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-//             >
-//               <Link href="/contact" scroll={false}>
-//                 <li className="px-5 text-sm uppercase ">Contact</li>
-//               </Link>
-//             </motion.div>
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-//             >
-//               <Link href="/blog" scroll={false}>
-//                 <li className="px-5 text-sm uppercase ">Blog</li>
-//               </Link>
-//             </motion.div>
-//           </ul>
-//           <div className="md:hidden">
-//             <button onClick={handleNav}>
-//               <svg
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 className="h-6 w-6 text-white"
-//                 fill="none"
-//                 viewBox="0 0 24 24"
-//                 stroke="currentColor"
-//               >
-//                 <path
-//                   strokeLinecap="round"
-//                   strokeLinejoin="round"
-//                   strokeWidth={2}
-//                   d="M4 6h16M4 12h16M4 18h16"
-//                 />
-//               </svg>
-//             </button>
-//           </div>
-//         </div>
-//       </motion.div>
-//       {show && (
-//         <motion.div
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ duration: 0.5 }}
-//           className="fixed w-full h-full bg-[#0d1821] z-[100] top-0 left-0"
-//         >
-//           <div className="flex flex-col justify-center items-center h-full">
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-//             >
-//               <Link href="/" scroll={false}>
-//                 <li className="px-5 text-sm uppercase">Work</li>
-//               </Link>
-//             </motion.div>
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 mx-2 w-20 hover:underline"
-//             >
-//               <Link href="/about" scroll={false}>
-//                 <li className="px-5 text-sm uppercase">About</li>
-//               </Link>
-//             </motion.div>
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-//             >
-//               <Link href="/contact" scroll={false}>
-//                 <li className="px-5 text-sm uppercase ">Contact</li>
-//               </Link>
-//             </motion.div>
-//             <motion.div
-//               whileHover={{
-//                 scale: 1.1,
-//                 transition: { duration: 0.5, ease: "easeInOut" },
-//               }}
-//               whileTap={{ scale: 0.9 }}
-//               className="flex items-center justify-center h-8 w-20 mx-2 hover:underline"
-//             >
-//               <Link href="/blog" scroll={false}>
-//                 <li className="px-5 text-sm uppercase ">Blog</li>
-//               </Link>
-//             </motion.div>
-//           </div>
-//         </motion.div>
-//       )}
-//     </motion.div>
-//   );
-// };

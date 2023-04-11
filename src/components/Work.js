@@ -6,7 +6,6 @@ import Link from "next/link";
 import Footer from "./Footer";
 
 const Work = () => {
-  
   return (
     <>
       <motion.div
@@ -15,16 +14,18 @@ const Work = () => {
       >
         <div className="w-5/6 flex flex-col sm:flex-row items-center justify-center py-4">
           <div className="flex flex-col full justify-between my-6 sm:my-0">
-            <h1 className="font-semibold text-4xl py-4 mt-4 sm:mt-0">Hello!</h1>
-            <p className="py-2 text-2xl sm:w-11/12">
-              I am Ankur Dixit and I am a UX
-              Designer and a Junior Developer based in Vancouver, BC.
+            <h1 className="font-semibold text-2xl sm:text-4xl py-4 mt-4 sm:mt-0">
+              Hello!
+            </h1>
+            <p className="py-2 sm:text-2xl sm:w-11/12">
+              I am Ankur Dixit and I am a UX Designer and a Junior Developer
+              based in Vancouver, BC.
             </p>
-            <p className="py-2 text-2xl">
+            <p className="py-2 sm:text-2xl">
               I create incredible digital experiences for people.
             </p>
           </div>
-          <div className='sm:pt-10 sm:w-3/6'>
+          <div className="sm:pt-10 w-4/6 sm:w-3/6">
             <motion.img
               src="face.svg"
               width={200}
@@ -36,7 +37,7 @@ const Work = () => {
             ></motion.img>
           </div>
         </div>
-        <div className="flex flex-col justify-around items-center mb-6">
+        <div className="flex flex-col justify-around items-center mb-12">
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
             <Link href="/saje">
               <motion.img
