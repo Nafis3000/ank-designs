@@ -17,8 +17,8 @@ const Footer = () => {
       <p className="mt-3 w-full text-center sm:self-center">
         Feel free to reach out to me on any of the platforms below!
       </p>
-      <div className="flex flex-row justify-center items-center my-6 text-5xl">
-        <div className="flex w-6/12 sm:w-3/12 justify-around">
+      <div className="flex flex-row justify-center items-center my-6 text-4xl">
+        <div className="flex w-6/12 sm:w-2/12 justify-around">
           <Link
             href="https://www.linkedin.com/in/ankdesigns/"
             target="_blank"
