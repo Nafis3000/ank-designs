@@ -21,10 +21,10 @@ const About = () => {
           height={1080}
           alt="about-image"
           priority
-          className="w-full h-auto"
+          className="w-full h-[350px] object-cover sm:h-auto"
         ></Image>
       </motion.div>
-      <div className="flex flex-col justify-center items-center absolute h-[1000px] w-full bg-gradient-to-b from-indigo-300 to-white opacity-60">
+      <div className="flex flex-col justify-center items-center absolute h-[1500px] w-full bg-gradient-to-b from-indigo-300 to-white opacity-60">
       </div>
       <div className="flex flex-col justify-center items-center w-full absolute">
         <div className="flex flex-col justify-center items-center">
