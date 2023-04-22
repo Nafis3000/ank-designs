@@ -24,7 +24,7 @@ const About = () => {
           className="w-full h-[350px] object-cover sm:h-auto"
         ></Image>
       </motion.div>
-      <div className="flex flex-col justify-center items-center absolute h-[1500px] w-full bg-gradient-to-b from-indigo-300 to-white opacity-60">
+      <div className="flex flex-col justify-center items-center absolute h-[1300px] w-full bg-gradient-to-b from-indigo-300 to-white opacity-60">
       </div>
       <div className="flex flex-col justify-center items-center w-full absolute">
         <div className="flex flex-col justify-center items-center">
