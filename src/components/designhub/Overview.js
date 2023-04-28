@@ -96,7 +96,7 @@ const Overview = () => {
           height={500}
           className="w-full h-auto my-12"
         ></Image>
-        <h1 className="text-xl sm:text-3xl my-3 sm:mt-8">Designer Persona</h1>
+        <h1 className="text-xl sm:text-3xl my-3 sm:mt-8 mb-9">Designer Persona</h1>
         <Image
           src="dh-overview4.svg"
           priority
