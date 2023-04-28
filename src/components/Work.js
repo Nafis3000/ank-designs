@@ -39,13 +39,13 @@ const Work = () => {
         </div>
         <div className="flex flex-col justify-around items-center mb-12">
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
-            <Link href="/saje">
+            <Link href="/designhub">
               <motion.img
-                src="case1.svg"
+                src="case3.svg"
                 className="w-full"
                 width={300}
                 height={300}
-                alt="case2"
+                alt="case3"
                 whileHover={{ scale: 1.03 }}
               ></motion.img>
             </Link>
@@ -63,13 +63,13 @@ const Work = () => {
             </Link>
           </div>
           <div className="w-5/6 my-4 sm:my-8 shadow-lg hover:shadow-xl rounded-lg">
-            <Link href="/designhub">
+            <Link href="/saje">
               <motion.img
-                src="case3.svg"
+                src="case1.svg"
                 className="w-full"
                 width={300}
                 height={300}
-                alt="case3"
+                alt="case2"
                 whileHover={{ scale: 1.03 }}
               ></motion.img>
             </Link>

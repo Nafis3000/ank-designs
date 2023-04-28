@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
+
 import { Montserrat } from "@next/font/google";
 
 const montserrat = Montserrat({
@@ -10,6 +11,7 @@ const montserrat = Montserrat({
 
 
 export default function App({ Component, pageProps }) {
+ 
   return (
     <>
       <main className={`${montserrat.variable} font-sans`}>
