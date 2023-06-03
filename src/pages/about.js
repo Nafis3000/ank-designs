@@ -56,12 +56,6 @@ const About = () => {
               that enhance the user experience.
             </p>
             <p className="my-2">
-              As a Junior Developer, I am constantly learning and expanding my
-              skill set. I love the challenge of problem-solving and finding
-              creative solutions to complex issues. I am experienced in several
-              programming languages and enjoy working on a variety of projects.
-            </p>
-            <p className="my-2">
               In my free time, I travel a lot and enjoy exploring Vancouver's
               vibrant art and design scene. I am always seeking inspiration and
               new ideas to incorporate into my work. I am a strong believer in

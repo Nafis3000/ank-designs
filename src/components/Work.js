@@ -18,7 +18,7 @@ const Work = () => {
               Hello!
             </h1>
             <p className="py-2 sm:text-2xl sm:w-11/12">
-              I am Ankur Dixit and I am a UX Designer and a Junior Developer
+              I am Ankur Dixit and I am a UX Designer
               based in Vancouver, BC.
             </p>
             <p className="py-2 sm:text-2xl">
