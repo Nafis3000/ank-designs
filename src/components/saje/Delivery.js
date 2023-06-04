@@ -20,7 +20,7 @@ const Delivery = () => {
       />
 
       <Link
-        href="https://www.figma.com/proto/7ITv5ongGdN2UjlIBxFQa1/Saje-cs?node-id=1-551&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A551"
+        href="https://www.figma.com/proto/7ITv5ongGdN2UjlIBxFQa1/Saje-cs?type=design&node-id=104-2231&scaling=scale-down&page-id=104%3A2004&starting-point-node-id=104%3A2231"
         target="_blank"
       >
         <button

@@ -147,7 +147,7 @@ const Prototype = () => {
           </video>
         </div>
         <Link
-          href="https://www.figma.com/proto/ttufgXwBbLqKtg75VKg7ZY/DesignHub?node-id=163-5291&scaling=scale-down&page-id=163%3A5290&starting-point-node-id=521%3A11422"
+          href="https://www.figma.com/proto/C8YzUZd5nPwvzI2bony7mn/Designhub-cs?type=design&node-id=3-12084&scaling=scale-down&page-id=3%3A3452&starting-point-node-id=3%3A12100"
           target="_blank"
           className="self-center"
         >

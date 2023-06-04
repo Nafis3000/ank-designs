@@ -68,7 +68,7 @@ function Delivery() {
       </div>
 
       <Link
-        href="https://www.figma.com/proto/B22uppsKZ4s4hFNdRiYqPx/Wireframe?node-id=143%3A1522"
+        href="https://www.figma.com/proto/jJSe4wtUzo2Ci1Qxljfep3/ADP-List-cs?type=design&node-id=1-877&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A877"
         target="_blank"
       >
         <button
